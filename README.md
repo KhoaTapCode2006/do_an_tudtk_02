@@ -78,12 +78,18 @@
 
 ## Hướng dẫn cài đặt
 
+### Lưu ý:
++ Do kích thước của file data csv khá lớn, việc tải zip trực tiếp có thể khiến file bị lỗi
++ Do đó nên clone repo về máy để đảm bảo file csv không bị lỗi mất dữ liệu 
+
 ### 1. Yêu cầu hệ thống
 * Python 3.10 trở lên.
 * Trình quản lý gói `pip`.
 
-### 2. Tạo môi trường ảo Venv
-Mở terminal và chạy lệnh: 
+### 2. Clone Repo và Tạo môi trường ảo Venv
+Clone repo bằng lệnh:
++ git clone https://github.com/KhoaTapCode2006/do_an_tudtk_02
+Mở terminal và chạy lệnh sau để tạo môi trường ảo Venv: 
 # Windows
 + python -m venv .venv
 # Linux / macOS
