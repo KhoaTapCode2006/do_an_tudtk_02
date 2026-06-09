@@ -3,5 +3,5 @@ Thầy cô vui lòng tải file bộ dữ liệu parquet dưới đây và cho v
 
 File CSV trong github chỉ phục vụ cho việc phân tích chuyên sâu trong file NoteBook của Part2
 
-Link tải bộ dữ liệu Parquet:
+Link tải bộ dữ liệu Parquet (Chỉ cần paste vào browser):
 https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-02.parquet
