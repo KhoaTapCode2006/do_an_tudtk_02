@@ -75,12 +75,14 @@
 ├── requirements.txt    # File requirements chứa các thư viện cần thiết
 └── README.md           # Markdown chứa tổng quan và hướng dẫn cài thư viện
 ```
-
-## Hướng dẫn cài đặt
-
-### Lưu ý:
+---
+## Lưu ý:
 + Do kích thước của file data csv khá lớn, việc tải zip trực tiếp có thể khiến file bị lỗi
 + Do đó nên clone repo về máy để đảm bảo file csv không bị lỗi mất dữ liệu 
++ Trong thư mục nộp bài do data csv quá lớn không thể nén được, nhóm đã thay bằng đường link tới bộ dữ liệu
++ Thầy cô vui lòng tải bộ dữ liệu về và đặt vào trong thư mục ./part2/data để part2 hoạt động đúng ạ
+---
+## Hướng dẫn cài đặt
 
 ### 1. Yêu cầu hệ thống
 * Python 3.10 trở lên.
