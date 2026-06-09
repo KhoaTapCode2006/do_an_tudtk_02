@@ -1,6 +1,8 @@
 Do bộ dữ liệu parquet quá lớn (~57MB) nên nhóm không thể nén xuống dưới 20MB
 Thầy cô vui lòng tải file bộ dữ liệu parquet dưới đây và cho vào thư mục /data này
 
+Hoặc thầy cô có thể clone repo về để có thể lấy luôn file Parquet và CSV mà không cần tải
+
 File CSV trong github chỉ phục vụ cho việc phân tích chuyên sâu trong file NoteBook của Part2
 
 Link tải bộ dữ liệu Parquet (Chỉ cần paste vào browser):
