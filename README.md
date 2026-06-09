@@ -54,8 +54,8 @@
 ```text
 .
 ├── img/                        # Thư mục chứa hình ảnh các biểu đồ được vẽ từ part1 và part2
-├── reports/
-│   └── reports.pdf             # File report PDF
+├── report/
+│   └── report.pdf              # File report PDF
 ├── part1/
 │   ├── compare_models.py       # So sánh 3 mô hình tuyến tính, bậc 2 và overfitting
 │   ├── cross_validation.py     # Thuật toán chia K-Folds và tính R^2
