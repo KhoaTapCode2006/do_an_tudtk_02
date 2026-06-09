@@ -208,14 +208,12 @@ def plot_best_model_diagnostics(
     print("Lưu vào img/residual_diagnostics_trip.png (Bên ngoài)\n")
 
 
-# PHẦN 4 — PIPELINE THỰC TẾ VỚI yellow_tripdata_2026-02.csv
-def prepare_taxi_data(csv_path="./data/yellow_tripdata_2026-02.csv"):
+# PHẦN 4 — PIPELINE THỰC TẾ VỚI yellow_tripdata_2026-02.parquet
+def prepare_taxi_data(csv_path="./data/yellow_tripdata_2026-02.parquet"):
     """Đọc và chuẩn bị dữ liệu NYC Yellow Taxi cho bài toán hồi quy."""
 
     print(f"Đọc dữ liệu từ {csv_path}")
-    df = pd.read_csv("./data/yellow_tripdata_2026-02.csv",
-                    dtype={'store_and_fwd_flag': str, 'payment_type': float},
-                    low_memory=False)
+    df = pd.read_parquet("./data/yellow_tripdata_2026-02.parquet")
 
     # Chọn các cột đặc trưng và mục tiêu
     # fare_amount và tip_amount bị loại bỏ để tránh data leakage
@@ -295,7 +293,7 @@ def prepare_taxi_data(csv_path="./data/yellow_tripdata_2026-02.csv"):
 def main():
     # ── 1. Chuẩn bị dữ liệu ─────────────────────────────────────────────────
     X_train_raw, X_test_raw, y_train, y_test, cat_idx = prepare_taxi_data(
-        "yellow_tripdata_2026-02.csv"
+        "yellow_tripdata_2026-02.parquet"
     )
 
     # ── 2. Fit pipeline trên Train, transform cả hai tập ────────────────────

@@ -6,9 +6,7 @@ import os
 
 print("KHAO SAT DU LIEU (EDA)")
 print("Reading data...")
-df = pd.read_csv("./data/yellow_tripdata_2026-02.csv",
-                    dtype={'store_and_fwd_flag': str, 'payment_type': float},
-                    low_memory=False)
+df = pd.read_parquet("./data/yellow_tripdata_2026-02.parquet")
 print(f"Data shape: {df.shape}")
 
 print("\n1. Thong ke mo ta (Descriptive Statistics):")
